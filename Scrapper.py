@@ -1,3 +1,26 @@
+# install git
+# create repository in github
+
+# go to gitbash
+# git config -- global user.name "Bijan Adhikari"
+# git config -- global user.email "bijan.adhikari343@gmail.com"
+
+# git init
+# git status => if you want to check what are the status of files..
+# git diff => if you want to check what are the changes
+# git commit -m "Your message"
+# copy paste git code from github..
+# git commit -m "Add git commands"
+# git push.
+# Production level ma pathauna - merge garne.. 
+
+###################
+# 1. Change the code
+# 2. git add.
+# 3. git commit -m "Your message"
+# 4. git push..
+###################  # kunai pani company ma gayera company le sikaucha ra majority of time we perform this operation....
+
 # Web Scrapping Project...
 
 import requests
@@ -15,8 +38,6 @@ def scrape_book(url):
         return 
     
     response.encoding = response.apparent_encoding # yo lekhe pachi ananda le rendering garna sakyo... 
-
-    print (response.text)
     
     soup = BeautifulSoup(response.text, "html.parser")
     books = soup.find_all("article", class_ = "product_pod" )
